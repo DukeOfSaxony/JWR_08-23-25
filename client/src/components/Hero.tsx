@@ -11,13 +11,13 @@ const Hero: React.FC = () => {
 
   useEffect(() => {
     const phrases = [
-      "CUT KEYS",
-      "CLEAN UGGS",
-      "FIX ZIPPERS",
-      "REPLACE BATTERIES",
-      "CARRY WATCHBANDS",
       "REPAIR WATCHES",
-      "SELL UMBRELLAS"
+      "RESTORE JEWELRY",
+      "RESIZE RINGS",
+      "REPLACE BATTERIES",
+      "FIX CLASPS",
+      "POLISH METALS",
+      "APPRAISE GEMS"
     ];
 
     let phraseIndex = 0;
@@ -28,11 +28,11 @@ const Hero: React.FC = () => {
       const parts = text.split(" ");
       
       if (parts.length === 1) {
-        return <span><span className="text-[#ff3e00]">{parts[0]}</span></span>;
+        return <span><span className="text-black">{parts[0]}</span></span>;
       } else {
         return (
           <span>
-            <span className="text-[#ff3e00]">{parts[0]}</span>
+            <span className="text-black">{parts[0]}</span>
             <span className="text-white">{" " + parts.slice(1).join(" ")}</span>
           </span>
         );
@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
       className="pt-24 md:pt-32 pb-16 md:pb-24 bg-cover bg-center min-h-screen flex items-center" 
       style={{
         backgroundImage: `url(${hikingImage})`,
-        backgroundColor: 'rgba(0,0,0,0.65)',
+        backgroundColor: 'rgba(0,0,0,0.75)',
         backgroundBlendMode: 'overlay'
       }}
     >
@@ -113,24 +113,24 @@ const Hero: React.FC = () => {
           </div>
           
           <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4 fade-in stagger-delay-1">
-            Craftsmanship in Every Repair
+            Precision in Every Detail
           </h1>
           
           <p className="font-body text-lg md:text-xl text-gray-200 mb-8 max-w-2xl fade-in stagger-delay-2">
-            Brooklyn's finest shoe repair service since 1985. Traditional techniques meet modern standards at Michael's Shoe Repair in Carroll Gardens.
+            Brooklyn's premier jewelry and watch repair specialist since 1985. Master craftsmanship meets modern precision at Brooklyn Timepiece & Jewelry Repair in Carroll Gardens.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 fade-in stagger-delay-3">
             <a 
               href="#prices" 
-              className="bg-[#ff3e00] text-white font-heading font-semibold px-8 py-3 rounded text-center hover:bg-opacity-90 transition-colors"
+              className="bg-black text-white font-heading font-semibold px-8 py-3 rounded text-center hover:bg-gray-800 transition-colors"
             >
-              Price List
+              View Services
             </a>
             <a 
               href="#contact" 
-              className="bg-transparent border-2 border-white text-white font-heading font-semibold px-8 py-3 rounded text-center hover:bg-white hover:text-[#1c1c1c] transition-colors"
+              className="bg-transparent border-2 border-white text-white font-heading font-semibold px-8 py-3 rounded text-center hover:bg-white hover:text-black transition-colors"
             >
-              Contact Us
+              Get Quote
             </a>
           </div>
         </div>

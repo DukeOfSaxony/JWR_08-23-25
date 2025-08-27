@@ -44,29 +44,31 @@ const Header: React.FC = () => {
   return (
     <header 
       id="navbar" 
-      className={`fixed w-full ${isScrolled ? 'py-2 bg-[#f5f5f5] shadow-md' : 'py-3 md:py-4 bg-[#1c1c1c]/70 backdrop-blur-sm'} z-50 transition-all duration-300`}
+      className={`fixed w-full ${isScrolled ? 'py-2 bg-white shadow-md' : 'py-3 md:py-4 bg-black/70 backdrop-blur-sm'} z-50 transition-all duration-300`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#hero" className="flex items-center">
-          <div className="h-10 md:h-14">
-            <img src="/assets/michaels-logo-newer.png" alt="Michael's Shoe Repair" className="h-full object-contain" />
+          <div className="text-xl md:text-2xl font-bold">
+            <span className={`${isScrolled ? 'text-black' : 'text-white'} transition-colors`}>
+              Brooklyn Timepiece & Jewelry
+            </span>
           </div>
         </a>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-end space-x-4">
-          <a href="#about" className={`nav-link font-body pb-2 ${isScrolled ? 'text-[#1c1c1c]' : 'text-white'} hover:text-[#ff3e00] transition-colors`}>About</a>
-          <a href="#prices" className={`nav-link font-body pb-2 ${isScrolled ? 'text-[#1c1c1c]' : 'text-white'} hover:text-[#ff3e00] transition-colors`}>Prices</a>
-          <a href="#gallery" className={`nav-link font-body pb-2 ${isScrolled ? 'text-[#1c1c1c]' : 'text-white'} hover:text-[#ff3e00] transition-colors`}>Gallery</a>
-          <a href="#testimonials" className={`nav-link font-body pb-2 ${isScrolled ? 'text-[#1c1c1c]' : 'text-white'} hover:text-[#ff3e00] transition-colors`}>Testimonials</a>
-          <a href="#contact" className={`${isScrolled ? 'bg-[#ff3e00]' : 'bg-[#ff3e00] bg-opacity-90'} text-white px-4 py-2 rounded hover:bg-opacity-100 transition-colors shadow-md`}>Contact</a>
+          <a href="#about" className={`nav-link font-body pb-2 ${isScrolled ? 'text-black' : 'text-white'} hover:text-gray-600 transition-colors`}>About</a>
+          <a href="#prices" className={`nav-link font-body pb-2 ${isScrolled ? 'text-black' : 'text-white'} hover:text-gray-600 transition-colors`}>Services</a>
+          <a href="#gallery" className={`nav-link font-body pb-2 ${isScrolled ? 'text-black' : 'text-white'} hover:text-gray-600 transition-colors`}>Gallery</a>
+          <a href="#testimonials" className={`nav-link font-body pb-2 ${isScrolled ? 'text-black' : 'text-white'} hover:text-gray-600 transition-colors`}>Reviews</a>
+          <a href="#contact" className={`${isScrolled ? 'bg-black' : 'bg-black bg-opacity-90'} text-white px-4 py-2 rounded hover:bg-gray-800 transition-colors shadow-md`}>Contact</a>
         </nav>
         
         {/* Mobile Menu Button */}
         <button 
           id="mobile-menu-button" 
           ref={buttonRef}
-          className={`md:hidden p-2 rounded-md ${isMenuOpen ? 'bg-[#ff3e00] text-white' : 'bg-white shadow-sm border border-gray-200 text-[#1c1c1c]'} transition-all duration-300 focus:outline-none`}
+          className={`md:hidden p-2 rounded-md ${isMenuOpen ? 'bg-black text-white' : 'bg-white shadow-sm border border-gray-200 text-black'} transition-all duration-300 focus:outline-none`}
           onClick={toggleMenu}
           aria-label="Toggle mobile menu"
         >
@@ -88,56 +90,56 @@ const Header: React.FC = () => {
           <div className="container mx-auto px-4 py-2 flex flex-col">
             <a 
               href="#about" 
-              className="font-body text-[#1c1c1c] hover:bg-[#f5f5f5] hover:text-[#ff3e00] transition-all py-4 px-3 border-b border-gray-200 text-lg font-medium flex items-center" 
+              className="font-body text-black hover:bg-gray-50 hover:text-gray-600 transition-all py-4 px-3 border-b border-gray-200 text-lg font-medium flex items-center" 
               onClick={(e) => {
                 e.preventDefault();
                 document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
                 closeMenu();
               }}
             >
-              <span className="w-1.5 h-1.5 bg-[#ff3e00] rounded-full mr-3"></span>
+              <span className="w-1.5 h-1.5 bg-black rounded-full mr-3"></span>
               About
             </a>
             <a 
               href="#prices" 
-              className="font-body text-[#1c1c1c] hover:bg-[#f5f5f5] hover:text-[#ff3e00] transition-all py-4 px-3 border-b border-gray-200 text-lg font-medium flex items-center" 
+              className="font-body text-black hover:bg-gray-50 hover:text-gray-600 transition-all py-4 px-3 border-b border-gray-200 text-lg font-medium flex items-center" 
               onClick={(e) => {
                 e.preventDefault();
                 document.querySelector("#prices")?.scrollIntoView({ behavior: "smooth" });
                 closeMenu();
               }}
             >
-              <span className="w-1.5 h-1.5 bg-[#ff3e00] rounded-full mr-3"></span>
-              Prices
+              <span className="w-1.5 h-1.5 bg-black rounded-full mr-3"></span>
+              Services
             </a>
             <a 
               href="#gallery" 
-              className="font-body text-[#1c1c1c] hover:bg-[#f5f5f5] hover:text-[#ff3e00] transition-all py-4 px-3 border-b border-gray-200 text-lg font-medium flex items-center" 
+              className="font-body text-black hover:bg-gray-50 hover:text-gray-600 transition-all py-4 px-3 border-b border-gray-200 text-lg font-medium flex items-center" 
               onClick={(e) => {
                 e.preventDefault();
                 document.querySelector("#gallery")?.scrollIntoView({ behavior: "smooth" });
                 closeMenu();
               }}
             >
-              <span className="w-1.5 h-1.5 bg-[#ff3e00] rounded-full mr-3"></span>
+              <span className="w-1.5 h-1.5 bg-black rounded-full mr-3"></span>
               Gallery
             </a>
             <a 
               href="#testimonials" 
-              className="font-body text-[#1c1c1c] hover:bg-[#f5f5f5] hover:text-[#ff3e00] transition-all py-4 px-3 border-b border-gray-200 text-lg font-medium flex items-center" 
+              className="font-body text-black hover:bg-gray-50 hover:text-gray-600 transition-all py-4 px-3 border-b border-gray-200 text-lg font-medium flex items-center" 
               onClick={(e) => {
                 e.preventDefault();
                 document.querySelector("#testimonials")?.scrollIntoView({ behavior: "smooth" });
                 closeMenu();
               }}
             >
-              <span className="w-1.5 h-1.5 bg-[#ff3e00] rounded-full mr-3"></span>
-              Testimonials
+              <span className="w-1.5 h-1.5 bg-black rounded-full mr-3"></span>
+              Reviews
             </a>
             <div className="p-3 my-2">
               <a 
                 href="#contact" 
-                className="bg-[#ff3e00] text-white font-medium px-4 py-3 rounded hover:bg-opacity-90 transition-colors text-center block w-full text-lg shadow-md" 
+                className="bg-black text-white font-medium px-4 py-3 rounded hover:bg-gray-800 transition-colors text-center block w-full text-lg shadow-md" 
                 onClick={(e) => {
                   e.preventDefault();
                   document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });

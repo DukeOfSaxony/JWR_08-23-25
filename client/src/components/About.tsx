@@ -10,28 +10,27 @@ const About: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 lg:pr-12 mb-12 lg:mb-0">
-            <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#1c1c1c] mb-6 slide-from-left">
-              Tradition Meets Excellence
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-black mb-6 slide-from-left">
+              Master Craftsmanship in Time
             </h2>
             <p className="font-body text-gray-700 mb-6 slide-from-left stagger-delay-1">
-              For over 30 years, Michael's Shoe Repair has been a cornerstone of the Carroll Gardens community in Brooklyn at 319 Smith Street. 
-              Our commitment to quality craftsmanship and traditional repair techniques has earned us a reputation as the 
-              neighborhood's most trusted cobbler.
+              For over 35 years, Brooklyn Timepiece & Jewelry Repair has been the trusted guardian of precious timepieces and treasured jewelry in Carroll Gardens. 
+              Our master craftsmen combine traditional horological techniques with modern precision tools to restore, repair, and maintain your most valued pieces.
             </p>
             <p className="font-body text-gray-700 mb-6 slide-from-left stagger-delay-2">
-              What sets us apart is our dedication to preserving the art of shoe repair while embracing modern techniques 
-              that extend the life of your favorite footwear. Every pair of shoes that comes through our door receives 
-              the same meticulous attention to detail.
+              What sets us apart is our unwavering dedication to precision and authenticity. Whether it's a vintage Rolex, 
+              a family heirloom, or a custom engagement ring, every piece receives the same meticulous care and expert attention. 
+              We understand that these aren't just objects – they're memories, investments, and treasures.
             </p>
             <div className="flex items-center slide-from-left stagger-delay-3">
               <img 
                 src="/assets/michael.jpg" 
                 alt="Michael Davidov" 
-                className="w-16 h-16 rounded-full object-cover border-2 border-[#ff3e00]" 
+                className="w-16 h-16 rounded-full object-cover border-2 border-black" 
               />
               <div className="ml-4">
-                <p className="font-heading font-semibold text-[#1c1c1c]">Michael Davidov</p>
-                <p className="text-sm text-gray-600">Master Cobbler & Owner</p>
+                <p className="font-heading font-semibold text-black">Samuel Cohen</p>
+                <p className="text-sm text-gray-600">Master Horologist & Owner</p>
               </div>
             </div>
           </div>
@@ -39,12 +38,12 @@ const About: React.FC = () => {
             <div className="relative">
               <img 
                 src="/assets/store.jpg" 
-                alt="Michael's Shoe Repair at 319 Smith Street" 
+                alt="Brooklyn Timepiece & Jewelry Repair Workshop" 
                 className="rounded-lg shadow-lg w-full" 
               />
-              <div className="absolute -bottom-6 -left-6 bg-[#ff3e00] p-4 rounded shadow-md hidden md:block">
-                <p className="font-heading font-bold text-white text-3xl">30+</p>
-                <p className="text-white">Years of Experience</p>
+              <div className="absolute -bottom-6 -left-6 bg-black p-4 rounded shadow-md hidden md:block">
+                <p className="font-heading font-bold text-white text-3xl">35+</p>
+                <p className="text-white">Years of Precision</p>
               </div>
             </div>
           </div>

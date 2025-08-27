@@ -108,21 +108,21 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" ref={sectionRef} className="py-16 md:py-24 bg-[#f5f5f5]">
+    <section id="contact" ref={sectionRef} className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#1c1c1c] mb-4 fade-in">
-            Get In Touch
+          <h2 className="font-heading font-bold text-3xl md:text-4xl text-black mb-4 fade-in">
+            Contact Our Craftsmen
           </h2>
           <p className="font-body text-gray-700 max-w-2xl mx-auto fade-in stagger-delay-1">
-            Have questions about our services or want to get an estimate? Contact us today and we'll be happy to help.
+            Ready to restore your treasured timepieces and jewelry? Contact our expert craftsmen for a consultation and estimate.
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-white rounded-lg shadow-md p-8 fade-in stagger-delay-2">
-            <h3 className="font-heading font-semibold text-2xl text-[#1c1c1c] mb-6">Send Us a Message</h3>
+            <h3 className="font-heading font-semibold text-2xl text-black mb-6">Send Us a Message</h3>
             
             <form 
               id="contact-form" 
@@ -144,7 +144,7 @@ const Contact: React.FC = () => {
                   id="name" 
                   name="name" 
                   required 
-                  className="focus:ring-[#ff3e00]"
+                  className="focus:ring-black"
                   value={formData.name}
                   onChange={handleChange}
                 />
@@ -157,7 +157,7 @@ const Contact: React.FC = () => {
                   id="email" 
                   name="email" 
                   required 
-                  className="focus:ring-[#ff3e00]"
+                  className="focus:ring-black"
                   value={formData.email}
                   onChange={handleChange}
                 />
@@ -169,7 +169,7 @@ const Contact: React.FC = () => {
                   type="tel" 
                   id="phone" 
                   name="phone" 
-                  className="focus:ring-[#ff3e00]"
+                  className="focus:ring-black"
                   value={formData.phone}
                   onChange={handleChange}
                 />
@@ -181,20 +181,20 @@ const Contact: React.FC = () => {
                   id="service" 
                   name="service" 
                   required
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff3e00] focus:border-[#ff3e00]"
+                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-black"
                   value={formData.service}
                   onChange={handleChange}
                 >
                   <option value="">Select a Service</option>
-                  <option value="shoe-repair">Shoe Repair</option>
                   <option value="watch-repair">Watch Repair</option>
                   <option value="jewelry-repair">Jewelry Repair</option>
-                  <option value="sole-replacement">Sole Replacement</option>
-                  <option value="heel-repair">Heel Repair</option>
-                  <option value="leather-restoration">Leather Restoration</option>
-                  <option value="stretching">Shoe Stretching</option>
-                  <option value="orthopedic">Orthopedic Modifications</option>
-                  <option value="sneaker-cleaning">Sneaker Cleaning</option>
+                  <option value="watch-service">Watch Service & Maintenance</option>
+                  <option value="ring-sizing">Ring Sizing</option>
+                  <option value="chain-repair">Chain Repair</option>
+                  <option value="battery-replacement">Watch Battery</option>
+                  <option value="band-replacement">Watch Band Replacement</option>
+                  <option value="appraisal">Jewelry Appraisal</option>
+                  <option value="restoration">Antique Restoration</option>
                   <option value="other">Other (Please Specify)</option>
                 </select>
               </div>
@@ -206,7 +206,7 @@ const Contact: React.FC = () => {
                   name="message" 
                   rows={4} 
                   required 
-                  className="focus:ring-[#ff3e00]"
+                  className="focus:ring-black"
                   value={formData.message}
                   onChange={handleChange}
                 ></textarea>
@@ -227,7 +227,7 @@ const Contact: React.FC = () => {
               <button 
                 type="submit" 
                 disabled={isSubmitting}
-                className={`w-full bg-[#ff3e00] text-white font-heading font-semibold py-3 px-6 rounded hover:bg-opacity-90 transition-colors ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'pulse-animation'}`}
+                className={`w-full bg-black text-white font-heading font-semibold py-3 px-6 rounded hover:bg-gray-800 transition-colors ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'pulse-animation'}`}
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
@@ -236,12 +236,12 @@ const Contact: React.FC = () => {
           
           {/* Contact Information */}
           <div className="fade-in stagger-delay-3">
-            <div className="bg-[#1c1c1c] text-white rounded-lg shadow-md p-8 mb-8">
+            <div className="bg-black text-white rounded-lg shadow-md p-8 mb-8">
               <h3 className="font-heading font-semibold text-2xl mb-6">Our Information</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mt-1 mr-4 text-[#ff3e00]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mt-1 mr-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
@@ -251,15 +251,15 @@ const Contact: React.FC = () => {
                       href="https://maps.google.com/?q=319+Smith+Street+Brooklyn+NY+11231" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="font-body text-gray-300 hover:text-[#ff3e00] transition-colors"
+                      className="font-body text-gray-300 hover:text-white transition-colors"
                     >
-                      319 Smith Street<br/>Carroll Gardens, Brooklyn<br/>NY 11231
+                      285 Court Street<br/>Carroll Gardens, Brooklyn<br/>NY 11231
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mt-1 mr-4 text-[#ff3e00]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mt-1 mr-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div>
@@ -269,31 +269,31 @@ const Contact: React.FC = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mt-1 mr-4 text-[#ff3e00]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mt-1 mr-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                   <div>
                     <h4 className="font-heading font-semibold text-lg mb-1">Phone</h4>
                     <a 
                       href="tel:+17182430288" 
-                      className="font-body text-gray-300 hover:text-[#ff3e00] transition-colors"
+                      className="font-body text-gray-300 hover:text-white transition-colors"
                     >
-                      (718) 243-0288
+                      (718) 555-0199
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mt-1 mr-4 text-[#ff3e00]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mt-1 mr-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   <div>
                     <h4 className="font-heading font-semibold text-lg mb-1">Email</h4>
                     <a 
                       href="mailto:diddleysquatter@gmail.com?subject=Repair%20Inquiry" 
-                      className="font-body text-gray-300 hover:text-[#ff3e00] transition-colors"
+                      className="font-body text-gray-300 hover:text-white transition-colors"
                     >
-                      diddleysquatter@gmail.com
+                      info@brooklyntimepiece.com
                     </a>
                   </div>
                 </div>
@@ -310,7 +310,7 @@ const Contact: React.FC = () => {
                 allowFullScreen 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Michael's Shoe Repair Location"
+                title="Brooklyn Timepiece & Jewelry Repair Location"
               ></iframe>
             </div>
           </div>
