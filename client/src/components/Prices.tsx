@@ -81,8 +81,8 @@ const Prices: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Specialized Services */}
           <div className="bg-gray-50 rounded-lg shadow-md p-6 scale-in stagger-delay-2">
-            <h3 className="font-heading font-semibold text-2xl text-black mb-6 flex items-center uppercase">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <h3 className="font-heading font-semibold text-2xl text-[#013823] mb-6 flex items-center uppercase">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-[#013823]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
               Specialized Services
@@ -114,8 +114,8 @@ const Prices: React.FC = () => {
           
           {/* Free Estimates */}
           <div className="bg-gray-100 rounded-lg shadow-md p-6 scale-in stagger-delay-3">
-            <h3 className="font-heading font-semibold text-2xl text-black mb-6 flex items-center uppercase">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <h3 className="font-heading font-semibold text-2xl text-[#013823] mb-6 flex items-center uppercase">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-[#013823]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
               Free Estimates
@@ -126,7 +126,7 @@ const Prices: React.FC = () => {
             </p>
             
             <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-              <h4 className="font-heading font-semibold text-xl text-black mb-3 uppercase">Our Guarantee</h4>
+              <h4 className="font-heading font-semibold text-xl text-[#013823] mb-3 uppercase">Our Guarantee</h4>
               <p className="font-body text-gray-700 mb-4">
                 All repairs come with a 90-day warranty. Your satisfaction is our commitment to excellence in craftsmanship.
               </p>
