@@ -49,7 +49,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#hero" className="flex items-center">
           <div className="h-8 md:h-10">
-            <img src="/attached_assets/logo_1759357366321.png" alt="Watch & Jewelry Repair" className="h-full object-contain" />
+            <img src="/assets/logo.png" alt="Watch & Jewelry Repair" className="h-full object-contain" />
           </div>
         </a>
         
