@@ -28,11 +28,11 @@ const Hero: React.FC = () => {
       const parts = text.split(" ");
       
       if (parts.length === 1) {
-        return <span><span className="text-black">{parts[0]}</span></span>;
+        return <span><span className="text-[#8c6f25]">{parts[0]}</span></span>;
       } else {
         return (
           <span>
-            <span className="text-black">{parts[0]}</span>
+            <span className="text-[#8c6f25]">{parts[0]}</span>
             <span className="text-white">{" " + parts.slice(1).join(" ")}</span>
           </span>
         );

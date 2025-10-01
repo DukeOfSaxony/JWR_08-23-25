@@ -8,14 +8,14 @@ const ServiceCard: React.FC<{
   price: string;
   delay: string;
 }> = ({ image, title, description, price, delay }) => (
-  <div className={`service-card bg-white rounded-lg shadow-md overflow-hidden fade-in ${delay}`}>
+  <div className={`service-card bg-[#024a2f] rounded-lg shadow-md overflow-hidden fade-in ${delay}`}>
     <img src={image} alt={title} className="w-full h-48 object-cover" />
     <div className="p-6">
-      <h3 className="font-heading font-semibold text-xl text-black mb-3">{title}</h3>
-      <p className="font-body text-gray-700 mb-4">{description}</p>
+      <h3 className="font-heading font-semibold text-xl text-[#8c6f25] mb-3">{title}</h3>
+      <p className="font-body text-white mb-4">{description}</p>
       <div className="flex justify-between items-center">
-        <span className="text-black font-heading font-semibold">{price}</span>
-        <a href="#contact" className="text-black font-semibold hover:text-gray-600 transition-colors">Inquire →</a>
+        <span className="text-[#8c6f25] font-heading font-semibold">{price}</span>
+        <a href="#contact" className="text-[#8c6f25] font-semibold hover:text-[#6d5a1e] transition-colors">Inquire →</a>
       </div>
     </div>
   </div>
@@ -71,7 +71,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section id="services" ref={sectionRef} className="py-16 md:py-24 bg-gray-50">
+    <section id="services" ref={sectionRef} className="py-16 md:py-24 bg-[#013823]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (

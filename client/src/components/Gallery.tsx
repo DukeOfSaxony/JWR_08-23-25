@@ -65,11 +65,11 @@ const Gallery: React.FC = () => {
   }, []);
 
   return (
-    <section id="gallery" ref={sectionRef} className="py-16 md:py-24 bg-[#f5f5f5]">
+    <section id="gallery" ref={sectionRef} className="py-16 md:py-24 bg-[#013823]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#1c1c1c] mb-4 fade-in">Our Craftsmanship</h2>
-          <p className="font-body text-gray-700 max-w-2xl mx-auto fade-in stagger-delay-1">
+          <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-4 fade-in">Our Craftsmanship</h2>
+          <p className="font-body text-gray-200 max-w-2xl mx-auto fade-in stagger-delay-1">
             Browse through our gallery of before and after transformations that showcase our dedication to quality and attention to detail.
           </p>
         </div>
@@ -133,9 +133,9 @@ const Gallery: React.FC = () => {
         
         {/* Before & After Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-          <div className="bg-white rounded-lg shadow-md overflow-hidden fade-in stagger-delay-3">
-            <div className="p-4 bg-[#1c1c1c]">
-              <h4 className="font-heading font-semibold text-lg text-white text-center">Before & After: Boot Restoration</h4>
+          <div className="bg-[#024a2f] rounded-lg shadow-md overflow-hidden fade-in stagger-delay-3">
+            <div className="p-4 bg-black">
+              <h4 className="font-heading font-semibold text-lg text-[#8c6f25] text-center">Before & After: Boot Restoration</h4>
             </div>
             <div className="grid grid-cols-2">
               <div className="relative">
@@ -144,7 +144,7 @@ const Gallery: React.FC = () => {
                   alt="Boot before restoration" 
                   className="w-full h-64 object-cover" 
                 />
-                <div className="absolute top-2 left-2 bg-[#ff3e00] text-white text-xs px-2 py-1 rounded">Before</div>
+                <div className="absolute top-2 left-2 bg-[#8c6f25] text-white text-xs px-2 py-1 rounded">Before</div>
               </div>
               <div className="relative">
                 <img 
@@ -152,14 +152,14 @@ const Gallery: React.FC = () => {
                   alt="Boot after restoration" 
                   className="w-full h-64 object-cover" 
                 />
-                <div className="absolute top-2 right-2 bg-[#ffb340] text-[#1c1c1c] text-xs px-2 py-1 rounded">After</div>
+                <div className="absolute top-2 right-2 bg-[#8c6f25] text-white text-xs px-2 py-1 rounded">After</div>
               </div>
             </div>
           </div>
           
-          <div className="bg-white rounded-lg shadow-md overflow-hidden fade-in stagger-delay-4">
-            <div className="p-4 bg-[#1c1c1c]">
-              <h4 className="font-heading font-semibold text-lg text-white text-center">Before & After: Sneaker Restore</h4>
+          <div className="bg-[#024a2f] rounded-lg shadow-md overflow-hidden fade-in stagger-delay-4">
+            <div className="p-4 bg-black">
+              <h4 className="font-heading font-semibold text-lg text-[#8c6f25] text-center">Before & After: Sneaker Restore</h4>
             </div>
             <div className="grid grid-cols-2">
               <div className="relative">
@@ -168,7 +168,7 @@ const Gallery: React.FC = () => {
                   alt="Sneaker before restoration" 
                   className="w-full h-64 object-cover" 
                 />
-                <div className="absolute top-2 left-2 bg-[#ff3e00] text-white text-xs px-2 py-1 rounded">Before</div>
+                <div className="absolute top-2 left-2 bg-[#8c6f25] text-white text-xs px-2 py-1 rounded">Before</div>
               </div>
               <div className="relative">
                 <img 
@@ -176,7 +176,7 @@ const Gallery: React.FC = () => {
                   alt="Sneaker after restoration" 
                   className="w-full h-64 object-cover" 
                 />
-                <div className="absolute top-2 right-2 bg-[#ffb340] text-[#1c1c1c] text-xs px-2 py-1 rounded">After</div>
+                <div className="absolute top-2 right-2 bg-[#8c6f25] text-white text-xs px-2 py-1 rounded">After</div>
               </div>
             </div>
           </div>

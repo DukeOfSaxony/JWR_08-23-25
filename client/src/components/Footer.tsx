@@ -1,5 +1,4 @@
 import React from 'react';
-import michaelsLogo from '@assets/michaels-logo-newer.png';
 
 const Footer: React.FC = () => {
   return (
@@ -9,9 +8,9 @@ const Footer: React.FC = () => {
           {/* About Column */}
           <div>
             <div className="flex items-center mb-6">
-              <h3 className="text-2xl font-bold text-white">
-                Brooklyn Timepiece & Jewelry Repair
-              </h3>
+              <div className="h-12">
+                <img src="/attached_assets/logo_1759357366321.png" alt="Watch & Jewelry Repair" className="h-full object-contain" />
+              </div>
             </div>
             <p className="font-body text-gray-300 mb-6">
               Brooklyn's premier jewelry and watch repair specialists for over 35 years. Master craftsmen dedicated to restoring and maintaining your most precious timepieces and treasured jewelry.
@@ -20,10 +19,10 @@ const Footer: React.FC = () => {
           
           {/* Contact Info - Left aligned */}
           <div className="flex flex-col items-start">
-            <h3 className="font-heading font-semibold text-lg text-white mb-6">Contact Information</h3>
+            <h3 className="font-heading font-semibold text-lg text-[#8c6f25] mb-6">Contact Information</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 mt-1 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 mt-1 text-[#8c6f25]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -37,7 +36,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li className="flex items-start">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 mt-1 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 mt-1 text-[#8c6f25]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 <a 
@@ -48,7 +47,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li className="flex items-start">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 mt-1 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 mt-1 text-[#8c6f25]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 <a 

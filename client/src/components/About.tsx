@@ -6,18 +6,18 @@ const About: React.FC = () => {
   useAnimationObserver(sectionRef);
 
   return (
-    <section id="about" ref={sectionRef} className="py-16 md:py-24 bg-white">
+    <section id="about" ref={sectionRef} className="py-16 md:py-24 bg-[#013823]">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 lg:pr-12 mb-12 lg:mb-0">
-            <h2 className="font-heading font-bold text-3xl md:text-4xl text-black mb-6 slide-from-left">
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-6 slide-from-left">
               Master Craftsmanship in Time
             </h2>
-            <p className="font-body text-gray-700 mb-6 slide-from-left stagger-delay-1">
+            <p className="font-body text-white mb-6 slide-from-left stagger-delay-1">
               For over 35 years, Brooklyn Timepiece & Jewelry Repair has been the trusted guardian of precious timepieces and treasured jewelry in Carroll Gardens. 
               Our master craftsmen combine traditional horological techniques with modern precision tools to restore, repair, and maintain your most valued pieces.
             </p>
-            <p className="font-body text-gray-700 mb-6 slide-from-left stagger-delay-2">
+            <p className="font-body text-white mb-6 slide-from-left stagger-delay-2">
               What sets us apart is our unwavering dedication to precision and authenticity. Whether it's a vintage Rolex, 
               a family heirloom, or a custom engagement ring, every piece receives the same meticulous care and expert attention. 
               We understand that these aren't just objects – they're memories, investments, and treasures.
@@ -26,11 +26,11 @@ const About: React.FC = () => {
               <img 
                 src="/assets/michael.jpg" 
                 alt="Michael Davidov" 
-                className="w-16 h-16 rounded-full object-cover border-2 border-black" 
+                className="w-16 h-16 rounded-full object-cover border-2 border-[#8c6f25]" 
               />
               <div className="ml-4">
-                <p className="font-heading font-semibold text-black">Samuel Cohen</p>
-                <p className="text-sm text-gray-600">Master Horologist & Owner</p>
+                <p className="font-heading font-semibold text-[#8c6f25]">Samuel Cohen</p>
+                <p className="text-sm text-gray-200">Master Horologist & Owner</p>
               </div>
             </div>
           </div>
