@@ -46,30 +46,23 @@ const Header: React.FC = () => {
       id="navbar" 
       className={`fixed w-full ${isScrolled ? 'py-2 bg-black shadow-md' : 'py-3 md:py-4 bg-black/90 backdrop-blur-sm'} z-50 transition-all duration-300`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#hero" className="flex items-center">
-          <div className="h-8 md:h-10">
-            <img src="/assets/logo.png" alt="Watch & Jewelry Repair" className="h-full object-contain" />
-          </div>
-        </a>
-        
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-end space-x-4">
-          <a href="#about" className="nav-link font-body pb-2 text-white hover:text-[#8c6f25] transition-colors">About</a>
-          <a href="#prices" className="nav-link font-body pb-2 text-white hover:text-[#8c6f25] transition-colors">Services</a>
-          <a href="#gallery" className="nav-link font-body pb-2 text-white hover:text-[#8c6f25] transition-colors">Gallery</a>
-          <a href="#testimonials" className="nav-link font-body pb-2 text-white hover:text-[#8c6f25] transition-colors">Reviews</a>
-          <a href="#contact" className="bg-[#8c6f25] text-white px-4 py-2 rounded hover:bg-[#a68434] transition-colors shadow-md">Contact</a>
-        </nav>
-        
-        {/* Mobile Menu Button */}
-        <button 
-          id="mobile-menu-button" 
-          ref={buttonRef}
-          className={`md:hidden p-2 rounded-md ${isMenuOpen ? 'bg-[#8c6f25] text-white' : 'bg-white shadow-sm border border-gray-200 text-black'} transition-all duration-300 focus:outline-none`}
-          onClick={toggleMenu}
-          aria-label="Toggle mobile menu"
-        >
+      <div className="container mx-auto px-4">
+        {/* Logo - Full Width with Mobile Menu Button */}
+        <div className="flex justify-center items-center py-4 relative">
+          <a href="#hero" className="flex items-center">
+            <div className="h-12 md:h-16">
+              <img src="/assets/logo.png" alt="Watch & Jewelry Repair" className="h-full object-contain" />
+            </div>
+          </a>
+          
+          {/* Mobile Menu Button */}
+          <button 
+            id="mobile-menu-button" 
+            ref={buttonRef}
+            className={`md:hidden absolute right-0 p-2 rounded-md ${isMenuOpen ? 'bg-[#8c6f25] text-white' : 'bg-white shadow-sm border border-gray-200 text-black'} transition-all duration-300 focus:outline-none`}
+            onClick={toggleMenu}
+            aria-label="Toggle mobile menu"
+          >
           {isMenuOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -80,6 +73,16 @@ const Header: React.FC = () => {
             </svg>
           )}
         </button>
+        </div>
+        
+        {/* Desktop Navigation - Below Logo */}
+        <nav className="hidden md:flex justify-center items-center space-x-8 pb-3">
+          <a href="#about" className="nav-link font-body text-white hover:text-[#8c6f25] transition-colors">About</a>
+          <a href="#prices" className="nav-link font-body text-white hover:text-[#8c6f25] transition-colors">Services</a>
+          <a href="#gallery" className="nav-link font-body text-white hover:text-[#8c6f25] transition-colors">Gallery</a>
+          <a href="#testimonials" className="nav-link font-body text-white hover:text-[#8c6f25] transition-colors">Reviews</a>
+          <a href="#contact" className="nav-link font-body text-white hover:text-[#8c6f25] transition-colors">Contact</a>
+        </nav>
       </div>
       
       {/* Mobile Navigation */}
@@ -134,19 +137,18 @@ const Header: React.FC = () => {
               <span className="w-1.5 h-1.5 bg-[#8c6f25] rounded-full mr-3"></span>
               Reviews
             </a>
-            <div className="p-3 my-2">
-              <a 
-                href="#contact" 
-                className="bg-[#8c6f25] text-white font-medium px-4 py-3 rounded hover:bg-[#a68434] transition-colors text-center block w-full text-lg shadow-md" 
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
-                  closeMenu();
-                }}
-              >
-                Contact Us
-              </a>
-            </div>
+            <a 
+              href="#contact" 
+              className="font-body text-white hover:bg-[#013823] hover:text-[#8c6f25] transition-all py-4 px-3 border-b border-gray-700 text-lg font-medium flex items-center" 
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+                closeMenu();
+              }}
+            >
+              <span className="w-1.5 h-1.5 bg-[#8c6f25] rounded-full mr-3"></span>
+              Contact
+            </a>
           </div>
         </div>
       )}
