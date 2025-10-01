@@ -1,7 +1,5 @@
 import React, { useRef } from 'react';
 import useAnimationObserver from '@/hooks/useAnimationObserver';
-import yelpLogo from '@assets/yelp.png';
-import googleLogo from '@assets/google.png';
 
 interface TestimonialProps {
   text: string;
@@ -83,31 +81,6 @@ const Testimonials: React.FC = () => {
               delay={testimonial.delay}
             />
           ))}
-        </div>
-        
-        {/* Review Platform Links */}
-        <div className="mt-12 text-center">
-          <p className="font-body text-gray-200 mb-6 fade-in stagger-delay-3">
-            Read more reviews from happy customers on:
-          </p>
-          <div className="flex flex-wrap justify-center gap-12 fade-in stagger-delay-4">
-            <a 
-              href="https://www.yelp.com/biz/michaels-shoe-repair-brooklyn-2" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="transition-transform hover:scale-105"
-            >
-              <img src={yelpLogo} alt="Yelp Reviews" className="h-12" />
-            </a>
-            <a 
-              href="https://www.google.com/maps/place/Michael's+Shoe+Repair/@40.681102,-73.9966506,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25a5768993891:0xd8f03f82d260f4c7!8m2!3d40.681102!4d-73.9940757!16s%2Fg%2F11c607674q?entry=ttu" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="transition-transform hover:scale-105"
-            >
-              <img src={googleLogo} alt="Google Reviews" className="h-12" />
-            </a>
-          </div>
         </div>
       </div>
     </section>
