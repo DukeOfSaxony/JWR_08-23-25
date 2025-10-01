@@ -10,7 +10,7 @@ const About: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 lg:pr-12 mb-12 lg:mb-0">
-            <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-6 slide-from-left">
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-6 slide-from-left uppercase">
               Master Craftsmanship in Time
             </h2>
             <p className="font-body text-white mb-6 slide-from-left stagger-delay-1">

@@ -38,7 +38,7 @@ const Prices: React.FC = () => {
     <section id="prices" ref={sectionRef} className="py-16 md:py-24 bg-[#013823]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-4 fade-in">Service Pricing</h2>
+          <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-4 fade-in uppercase">Service Pricing</h2>
           <p className="font-body text-white max-w-2xl mx-auto fade-in stagger-delay-1">
             Our transparent pricing ensures you know exactly what to expect. All prices may vary depending on the condition and material of your items.
           </p>
@@ -47,7 +47,7 @@ const Prices: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Watch Repair */}
           <div className="bg-[#022c1b] rounded-lg shadow-md p-6 scale-in">
-            <h3 className="font-heading font-semibold text-2xl text-[#8c6f25] mb-6 flex items-center">
+            <h3 className="font-heading font-semibold text-2xl text-[#8c6f25] mb-6 flex items-center uppercase">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-[#8c6f25]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -63,7 +63,7 @@ const Prices: React.FC = () => {
           
           {/* Jewelry Repair */}
           <div className="bg-[#022c1b] rounded-lg shadow-md p-6 scale-in stagger-delay-1">
-            <h3 className="font-heading font-semibold text-2xl text-[#8c6f25] mb-6 flex items-center">
+            <h3 className="font-heading font-semibold text-2xl text-[#8c6f25] mb-6 flex items-center uppercase">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-[#8c6f25]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
@@ -81,7 +81,7 @@ const Prices: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Specialized Services */}
           <div className="bg-gray-50 rounded-lg shadow-md p-6 scale-in stagger-delay-2">
-            <h3 className="font-heading font-semibold text-2xl text-black mb-6 flex items-center">
+            <h3 className="font-heading font-semibold text-2xl text-black mb-6 flex items-center uppercase">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
@@ -114,7 +114,7 @@ const Prices: React.FC = () => {
           
           {/* Free Estimates */}
           <div className="bg-gray-100 rounded-lg shadow-md p-6 scale-in stagger-delay-3">
-            <h3 className="font-heading font-semibold text-2xl text-black mb-6 flex items-center">
+            <h3 className="font-heading font-semibold text-2xl text-black mb-6 flex items-center uppercase">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
@@ -126,7 +126,7 @@ const Prices: React.FC = () => {
             </p>
             
             <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-              <h4 className="font-heading font-semibold text-xl text-black mb-3">Our Guarantee</h4>
+              <h4 className="font-heading font-semibold text-xl text-black mb-3 uppercase">Our Guarantee</h4>
               <p className="font-body text-gray-700 mb-4">
                 All repairs come with a 90-day warranty. Your satisfaction is our commitment to excellence in craftsmanship.
               </p>

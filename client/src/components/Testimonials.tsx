@@ -65,7 +65,7 @@ const Testimonials: React.FC = () => {
     <section id="testimonials" ref={sectionRef} className="py-16 md:py-24 bg-[#013823]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-4 fade-in">
+          <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-4 fade-in uppercase">
             Client Testimonials
           </h2>
           <p className="font-body text-gray-200 max-w-2xl mx-auto fade-in stagger-delay-1">

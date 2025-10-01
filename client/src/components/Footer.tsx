@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           
           {/* Contact Info - Left aligned */}
           <div className="flex flex-col items-start">
-            <h3 className="font-heading font-semibold text-lg text-[#8c6f25] mb-6">Contact Information</h3>
+            <h3 className="font-heading font-semibold text-lg text-[#8c6f25] mb-6 uppercase">Contact Information</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 mt-1 text-[#8c6f25]" fill="none" viewBox="0 0 24 24" stroke="currentColor">

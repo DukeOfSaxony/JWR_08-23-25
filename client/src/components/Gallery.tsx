@@ -68,7 +68,7 @@ const Gallery: React.FC = () => {
     <section id="gallery" ref={sectionRef} className="py-16 md:py-24 bg-[#013823]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-4 fade-in">Our Craftsmanship</h2>
+          <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-4 fade-in uppercase">Our Craftsmanship</h2>
           <p className="font-body text-gray-200 max-w-2xl mx-auto fade-in stagger-delay-1">
             Browse through our gallery of before and after transformations that showcase our dedication to quality and attention to detail.
           </p>
@@ -90,7 +90,7 @@ const Gallery: React.FC = () => {
                   className="w-full h-64 md:h-96 object-cover" 
                 />
                 <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black to-transparent">
-                  <h4 className="font-heading font-semibold text-xl text-white mb-2">{slide.title}</h4>
+                  <h4 className="font-heading font-semibold text-xl text-white mb-2 uppercase">{slide.title}</h4>
                   <p className="font-body text-gray-200">{slide.description}</p>
                 </div>
               </div>
@@ -135,7 +135,7 @@ const Gallery: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           <div className="bg-[#024a2f] rounded-lg shadow-md overflow-hidden fade-in stagger-delay-3">
             <div className="p-4 bg-black">
-              <h4 className="font-heading font-semibold text-lg text-[#8c6f25] text-center">Before & After: Boot Restoration</h4>
+              <h4 className="font-heading font-semibold text-lg text-[#8c6f25] text-center uppercase">Before & After: Boot Restoration</h4>
             </div>
             <div className="grid grid-cols-2">
               <div className="relative">
@@ -159,7 +159,7 @@ const Gallery: React.FC = () => {
           
           <div className="bg-[#024a2f] rounded-lg shadow-md overflow-hidden fade-in stagger-delay-4">
             <div className="p-4 bg-black">
-              <h4 className="font-heading font-semibold text-lg text-[#8c6f25] text-center">Before & After: Sneaker Restore</h4>
+              <h4 className="font-heading font-semibold text-lg text-[#8c6f25] text-center uppercase">Before & After: Sneaker Restore</h4>
             </div>
             <div className="grid grid-cols-2">
               <div className="relative">

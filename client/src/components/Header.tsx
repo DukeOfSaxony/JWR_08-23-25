@@ -50,7 +50,7 @@ const Header: React.FC = () => {
         {/* Logo - Full Width with Mobile Menu Button */}
         <div className="flex justify-center items-center py-4 relative">
           <a href="#hero" className="flex items-center">
-            <div className="h-10 md:h-12">
+            <div className="h-7 md:h-8">
               <img src="/assets/logo.png" alt="Watch & Jewelry Repair" className="h-full object-contain" />
             </div>
           </a>

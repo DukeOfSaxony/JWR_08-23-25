@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
     >
       <div className="container mx-auto px-4 mt-36">
         <div className="max-w-3xl">
-          <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4 fade-in">
+          <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4 fade-in uppercase">
             Precision in Every Detail
           </h1>
           

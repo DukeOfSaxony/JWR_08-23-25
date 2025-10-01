@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
     <section id="contact" ref={sectionRef} className="py-16 md:py-24 bg-[#013823]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-4 fade-in">
+          <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-4 fade-in uppercase">
             Contact Our Craftsmen
           </h2>
           <p className="font-body text-gray-200 max-w-2xl mx-auto fade-in stagger-delay-1">
@@ -122,7 +122,7 @@ const Contact: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-[#024a2f] rounded-lg shadow-md p-8 fade-in stagger-delay-2">
-            <h3 className="font-heading font-semibold text-2xl text-[#8c6f25] mb-6">Send Us a Message</h3>
+            <h3 className="font-heading font-semibold text-2xl text-[#8c6f25] mb-6 uppercase">Send Us a Message</h3>
             
             <form 
               id="contact-form" 
@@ -237,7 +237,7 @@ const Contact: React.FC = () => {
           {/* Contact Information */}
           <div className="fade-in stagger-delay-3">
             <div className="bg-black text-white rounded-lg shadow-md p-8 mb-8">
-              <h3 className="font-heading font-semibold text-2xl text-[#8c6f25] mb-6">Our Information</h3>
+              <h3 className="font-heading font-semibold text-2xl text-[#8c6f25] mb-6 uppercase">Our Information</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -246,7 +246,7 @@ const Contact: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                   <div>
-                    <h4 className="font-heading font-semibold text-lg mb-1">Address</h4>
+                    <h4 className="font-heading font-semibold text-lg mb-1 uppercase">Address</h4>
                     <a 
                       href="https://maps.google.com/?q=319+Smith+Street+Brooklyn+NY+11231" 
                       target="_blank" 
@@ -263,7 +263,7 @@ const Contact: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div>
-                    <h4 className="font-heading font-semibold text-lg mb-1">Business Hours</h4>
+                    <h4 className="font-heading font-semibold text-lg mb-1 uppercase">Business Hours</h4>
                     <p className="font-body text-gray-300">Monday - Friday: 9am - 7pm<br/>Saturday: 10am - 5pm<br/>Sunday: Closed</p>
                   </div>
                 </div>
@@ -273,7 +273,7 @@ const Contact: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                   <div>
-                    <h4 className="font-heading font-semibold text-lg mb-1">Phone</h4>
+                    <h4 className="font-heading font-semibold text-lg mb-1 uppercase">Phone</h4>
                     <a 
                       href="tel:+17182430288" 
                       className="font-body text-gray-300 hover:text-white transition-colors"
@@ -288,7 +288,7 @@ const Contact: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   <div>
-                    <h4 className="font-heading font-semibold text-lg mb-1">Email</h4>
+                    <h4 className="font-heading font-semibold text-lg mb-1 uppercase">Email</h4>
                     <a 
                       href="mailto:diddleysquatter@gmail.com?subject=Repair%20Inquiry" 
                       className="font-body text-gray-300 hover:text-white transition-colors"
