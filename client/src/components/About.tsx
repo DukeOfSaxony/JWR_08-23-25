@@ -8,7 +8,7 @@ const About: React.FC = () => {
   useAnimationObserver(sectionRef);
 
   return (
-    <section id="about" ref={sectionRef} className="py-16 md:py-24 bg-[#013823]">
+    <section id="about" ref={sectionRef} className="pt-16 md:pt-24 pb-8 md:pb-12 bg-[#013823]">
       <div className="container mx-auto px-4">
         <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-6 slide-from-left uppercase text-center">
           About Brooklyn Watch & Jewelry Repair
