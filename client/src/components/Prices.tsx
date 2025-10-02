@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import useAnimationObserver from '@/hooks/useAnimationObserver';
+import guaranteeImage from '@assets/quality_1759440445844.png';
 
 const PriceItem: React.FC<{ service: string; price: string }> = ({ service, price }) => (
   <div className="flex justify-between items-center border-b border-gray-200 pb-3">
@@ -126,16 +127,27 @@ const Prices: React.FC = () => {
             </p>
             
             <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-              <h4 className="font-heading font-semibold text-xl text-[#013823] mb-3 uppercase">Our Guarantee</h4>
-              <p className="font-body text-gray-700 mb-4">
-                All repairs come with a 90-day warranty. Your satisfaction is our commitment to excellence in craftsmanship.
-              </p>
-              <a 
-                href="#contact" 
-                className="inline-block bg-black text-white font-heading font-semibold px-6 py-2 rounded hover:bg-gray-800 transition-colors"
-              >
-                Get Your Free Estimate
-              </a>
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0">
+                  <img 
+                    src={guaranteeImage} 
+                    alt="Guaranteed Quality" 
+                    className="w-24 h-auto" 
+                  />
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-heading font-semibold text-xl text-[#013823] mb-3 uppercase">Our Guarantee</h4>
+                  <p className="font-body text-gray-700 mb-4">
+                    All repairs come with a 90-day warranty. Your satisfaction is our commitment to excellence in craftsmanship.
+                  </p>
+                  <a 
+                    href="#contact" 
+                    className="inline-block bg-black text-white font-heading font-semibold px-6 py-2 rounded hover:bg-gray-800 transition-colors"
+                  >
+                    Get Your Free Estimate
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

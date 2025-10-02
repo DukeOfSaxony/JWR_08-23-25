@@ -1,14 +1,13 @@
 import React, { useRef } from 'react';
 import useAnimationObserver from '@/hooks/useAnimationObserver';
 import storefrontMain from '@assets/storefront_1759411309106.jpg';
-import guaranteeImage from '@assets/quality_1759440445844.png';
 
 const About: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
   useAnimationObserver(sectionRef);
 
   return (
-    <section id="about" ref={sectionRef} className="pt-16 md:pt-24 pb-8 md:pb-12 bg-[#013823]">
+    <section id="about" ref={sectionRef} className="py-16 md:py-24 bg-[#013823]">
       <div className="container mx-auto px-4">
         <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-6 slide-from-left uppercase text-center">
           About Brooklyn Watch & Jewelry Repair
@@ -70,17 +69,9 @@ const About: React.FC = () => {
             Our Promise to You
           </h3>
           
-          <p className="font-body text-white mb-8 slide-from-left stagger-delay-8">
+          <p className="font-body text-white slide-from-left stagger-delay-8">
             When you bring us your watch or jewelry, you're entrusting us with more than a piece — you're entrusting us with history, emotional value, and precision. We promise to treat it as such, to deliver transparent service, and to walk you through each step from diagnosis to return.
           </p>
-
-          <div className="flex justify-center slide-from-left stagger-delay-9">
-            <img 
-              src={guaranteeImage} 
-              alt="Guaranteed Quality" 
-              className="w-64 h-auto" 
-            />
-          </div>
         </div>
       </div>
     </section>
