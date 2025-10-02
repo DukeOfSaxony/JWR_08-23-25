@@ -22,10 +22,10 @@ const Gallery: React.FC = () => {
             <FlipCardStack
               cardData={[
                 {
-                  frontTitle: "Before",
-                  frontSubtitle: "Click to see transformation",
-                  backTitle: "After",
-                  backSubtitle: "Crystal Repair",
+                  frontTitle: "BEFORE",
+                  frontSubtitle: "",
+                  backTitle: "AFTER",
+                  backSubtitle: "",
                   frontImage: before01,
                   backImage: after01
                 }
@@ -39,10 +39,10 @@ const Gallery: React.FC = () => {
             <FlipCardStack
               cardData={[
                 {
-                  frontTitle: "Before",
-                  frontSubtitle: "Click to see transformation",
-                  backTitle: "After",
-                  backSubtitle: "Pearl Restringing",
+                  frontTitle: "BEFORE",
+                  frontSubtitle: "",
+                  backTitle: "AFTER",
+                  backSubtitle: "",
                   frontImage: before02,
                   backImage: after02
                 }
@@ -56,10 +56,10 @@ const Gallery: React.FC = () => {
             <FlipCardStack
               cardData={[
                 {
-                  frontTitle: "Before",
-                  frontSubtitle: "Click to see transformation",
-                  backTitle: "After",
-                  backSubtitle: "Watchface Repair",
+                  frontTitle: "BEFORE",
+                  frontSubtitle: "",
+                  backTitle: "AFTER",
+                  backSubtitle: "",
                   frontImage: before03,
                   backImage: after03
                 }
