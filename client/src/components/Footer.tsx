@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="font-body text-gray-300 mb-6">
-              Brooklyn's premier jewelry and watch repair specialists for over 35 years. Master craftsmen dedicated to restoring and maintaining your most precious timepieces and treasured jewelry.
+              Brooklyn's premier jewelry and watch repair specialists for 8+ years. Master craftsmen dedicated to restoring and maintaining your most precious timepieces and treasured jewelry.
             </p>
           </div>
           
@@ -51,10 +51,10 @@ const Footer: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 <a 
-                  href="mailto:info@michaelsshoerepair.com?subject=Repair%20Inquiry" 
+                  href="mailto:jdavydov@gmail.com?subject=Repair%20Inquiry" 
                   className="font-body text-gray-300 hover:text-white transition-colors"
                 >
-                  info@brooklyntimepiece.com
+                  jdavydov@gmail.com
                 </a>
               </li>
             </ul>
