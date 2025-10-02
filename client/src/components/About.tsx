@@ -15,7 +15,7 @@ const About: React.FC = () => {
             </h2>
             
             <p className="font-body text-white mb-6 slide-from-left stagger-delay-1">
-              For nearly a decade, Brooklyn Watch & Jewelry Repair has been your neighborhood destination for expert watch and jewelry care. From delicate engagement rings to mechanical luxury watches, we treat every piece with the precision and respect it deserves.
+              For nearly a decade, Brooklyn Watch & Jewelry Repair has been the trusted destination for expert watch and jewelry care in Carroll Gardens, Cobble Hill, Boerum Hill, Gowanus, and Park Slope. From delicate engagement rings to mechanical luxury watches, we treat every piece with the precision and respect it deserves.
             </p>
 
             <h3 className="font-heading font-semibold text-2xl text-[#8c6f25] mb-4 slide-from-left stagger-delay-2 uppercase">
@@ -52,7 +52,7 @@ const About: React.FC = () => {
               <li className="flex items-start">
                 <span className="w-2 h-2 bg-[#8c6f25] rounded-full mr-3 mt-2 flex-shrink-0"></span>
                 <p className="font-body text-white">
-                  <strong className="text-[#8c6f25]">Local & reliable</strong> — serving Carroll Gardens, Brooklyn, and nearby neighborhoods, we pride ourselves on prompt turnaround times and local trust.
+                  <strong className="text-[#8c6f25]">Local & reliable</strong> — serving Carroll Gardens, Cobble Hill, Boerum Hill, Gowanus, and Park Slope, we pride ourselves on prompt turnaround times and the trust of our Brooklyn neighbors.
                 </p>
               </li>
             </ul>
