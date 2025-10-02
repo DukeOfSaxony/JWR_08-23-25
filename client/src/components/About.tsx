@@ -69,8 +69,8 @@ const About: React.FC = () => {
           <div className="lg:w-1/2 slide-from-right">
             <div className="relative">
               <img 
-                src="/assets/store.jpg" 
-                alt="Brooklyn Timepiece & Jewelry Repair Workshop" 
+                src="/attached_assets/storefront_1759411309106.jpg" 
+                alt="Brooklyn Watch & Jewelry Repair Storefront" 
                 className="rounded-lg shadow-lg w-full" 
               />
               <div className="absolute -bottom-6 -left-6 bg-black p-4 rounded shadow-md hidden md:block">
