@@ -40,7 +40,7 @@ const Testimonials: React.FC = () => {
 
   const testimonials = [
     {
-      text: "\"My vintage Rolex hadn't run in years until I brought it to Samuel. The restoration was flawless - it keeps perfect time and looks absolutely stunning. True master craftsmanship.\"",
+      text: "\"My vintage Rolex hadn't run in years until I brought it to Joe. The restoration was flawless - it keeps perfect time and looks absolutely stunning. True master craftsmanship.\"",
       name: "Sarah Johnson",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
       delay: ""
@@ -52,7 +52,7 @@ const Testimonials: React.FC = () => {
       delay: "stagger-delay-1"
     },
     {
-      text: "\"After searching Brooklyn for someone who could properly service my Omega Speedmaster, I found this gem. Their horological expertise is unmatched - my watch runs like new.\"",
+      text: "\"After searching Brooklyn for someone who could properly service my Omega Speedmaster, I found this gem. Their expertise is unmatched - my watch runs like new.\"",
       name: "Jennifer Martinez",
       image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80",
       delay: "stagger-delay-2"
