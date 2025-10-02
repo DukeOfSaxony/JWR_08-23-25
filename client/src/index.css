@@ -263,11 +263,13 @@
 }
 
 .flip-card-title {
+  font-family: 'EB Garamond', 'Garamond', serif;
   font-size: 1.5rem;
   font-weight: 600;
   color: white;
   margin-bottom: 0.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
 }
 
 .flip-card-subtitle {
