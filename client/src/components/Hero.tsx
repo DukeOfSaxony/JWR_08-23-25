@@ -20,11 +20,11 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 mt-36">
         <div className="max-w-3xl">
           <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4 fade-in uppercase">
-            Precision in Every Detail
+            Brooklyn's Trusted Watch & Jewelry Repair — Crafting Timeless Precision
           </h1>
           
           <p className="font-body text-lg md:text-xl text-gray-200 mb-8 max-w-2xl fade-in stagger-delay-1">
-            Brooklyn's premier jewelry and watch repair specialist since 1985. Master craftsmanship meets modern precision at Brooklyn Timepiece & Jewelry Repair in Carroll Gardens.
+            For 8 years, we've restored cherished heirlooms and fine timepieces in Carroll Gardens and beyond. Get a free quote today — because your pieces deserve expert care.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 fade-in stagger-delay-2">
             <a 
