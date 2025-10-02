@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import useAnimationObserver from '@/hooks/useAnimationObserver';
 import storefrontMain from '@assets/storefront_1759411309106.jpg';
-import guaranteeImage from '@assets/quality_1759440138422.jpg';
+import guaranteeImage from '@assets/quality_1759440445844.png';
 
 const About: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
