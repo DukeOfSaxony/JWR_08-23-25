@@ -248,12 +248,12 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-heading font-semibold text-lg mb-1 uppercase">Address</h4>
                     <a 
-                      href="https://maps.google.com/?q=319+Smith+Street+Brooklyn+NY+11231" 
+                      href="https://maps.google.com/?q=291+Smith+Street+Brooklyn+NY+11231" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="font-body text-gray-300 hover:text-white transition-colors"
                     >
-                      285 Court Street<br/>Carroll Gardens, Brooklyn<br/>NY 11231
+                      291 Smith St<br/>Brooklyn, NY 11231
                     </a>
                   </div>
                 </div>
@@ -264,7 +264,7 @@ const Contact: React.FC = () => {
                   </svg>
                   <div>
                     <h4 className="font-heading font-semibold text-lg mb-1 uppercase">Business Hours</h4>
-                    <p className="font-body text-gray-300">Monday - Friday: 9am - 7pm<br/>Saturday: 10am - 5pm<br/>Sunday: Closed</p>
+                    <p className="font-body text-gray-300">Monday - Saturday: 11:00 AM - 6:00 PM<br/>Sunday: 12:00 PM - 5:00 PM</p>
                   </div>
                 </div>
                 
@@ -275,10 +275,10 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-heading font-semibold text-lg mb-1 uppercase">Phone</h4>
                     <a 
-                      href="tel:+17182430288" 
+                      href="tel:+13479160069" 
                       className="font-body text-gray-300 hover:text-white transition-colors"
                     >
-                      (718) 555-0199
+                      (347) 916-0069
                     </a>
                   </div>
                 </div>
@@ -303,7 +303,7 @@ const Contact: React.FC = () => {
             {/* Map */}
             <div className="rounded-lg shadow-md overflow-hidden h-64 fade-in stagger-delay-4">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.1277463686737!2d-73.9963872!3d40.677458299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a57195d9b77%3A0x9c0a8863a2f7140!2s319%20Smith%20St%2C%20Brooklyn%2C%20NY%2011231!5e0!3m2!1sen!2sus!4v1687789430851!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.0899!2d-73.9963!3d40.6783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a57a1a5e5e5%3A0x1234567890abcdef!2s291%20Smith%20St%2C%20Brooklyn%2C%20NY%2011231!5e0!3m2!1sen!2sus!4v1687789430851!5m2!1sen!2sus" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
