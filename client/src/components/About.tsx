@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import useAnimationObserver from '@/hooks/useAnimationObserver';
 import storefrontMain from '@assets/storefront_1759411309106.jpg';
-import storefrontOverlay from '@assets/storefront_1759416844951.jpg';
 
 const About: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -69,20 +68,11 @@ const About: React.FC = () => {
           </div>
           
           <div className="lg:w-1/2 slide-from-right">
-            <div className="relative">
-              <img 
-                src={storefrontMain} 
-                alt="Brooklyn Watch & Jewelry Repair Storefront" 
-                className="rounded-lg shadow-lg w-full" 
-              />
-              <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg overflow-hidden hidden md:block w-48">
-                <img 
-                  src={storefrontOverlay} 
-                  alt="Brooklyn Watch & Jewelry Repair" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
+            <img 
+              src={storefrontMain} 
+              alt="Brooklyn Watch & Jewelry Repair Storefront" 
+              className="rounded-lg shadow-lg w-full" 
+            />
           </div>
         </div>
       </div>
