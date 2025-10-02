@@ -73,9 +73,12 @@ const About: React.FC = () => {
                 alt="Brooklyn Watch & Jewelry Repair Storefront" 
                 className="rounded-lg shadow-lg w-full" 
               />
-              <div className="absolute -bottom-6 -left-6 bg-black p-4 rounded shadow-md hidden md:block">
-                <p className="font-heading font-bold text-white text-3xl">8+</p>
-                <p className="text-white">Years of Precision</p>
+              <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg overflow-hidden hidden md:block w-48">
+                <img 
+                  src="/attached_assets/storefront_1759416844951.jpg" 
+                  alt="Brooklyn Watch & Jewelry Repair" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
