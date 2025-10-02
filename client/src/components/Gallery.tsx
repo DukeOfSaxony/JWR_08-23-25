@@ -16,6 +16,12 @@ const Gallery: React.FC = () => {
   return (
     <section id="gallery" ref={sectionRef} className="py-16 md:py-24 bg-[#013823]">
       <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="font-heading font-bold text-3xl md:text-4xl text-[#8c6f25] mb-4 fade-in uppercase">
+            Before & After
+          </h2>
+        </div>
+        
         {/* Before & After Flip Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="fade-in stagger-delay-1">

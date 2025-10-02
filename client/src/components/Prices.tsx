@@ -151,13 +151,6 @@ const Prices: React.FC = () => {
             </div>
           </div>
         </div>
-        
-        {/* Disclaimer */}
-        <div className="mt-8 text-center">
-          <p className="text-sm text-gray-600 italic">
-            We are not responsible for any items left for more than 30 days after completion of the work.
-          </p>
-        </div>
       </div>
     </section>
   );
