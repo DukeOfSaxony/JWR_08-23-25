@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import useAnimationObserver from '@/hooks/useAnimationObserver';
+import FlipCardStack from './FlipCard';
 import beforeAndBootsImage from '@assets/beforeandboots.jpg';
 import beforeAndHeelImage from '@assets/beforeandheel.jpg';
 import oxImage from '@assets/ox.jpg';
@@ -131,54 +132,42 @@ const Gallery: React.FC = () => {
           </div>
         </div>
         
-        {/* Before & After Grid */}
+        {/* Before & After Flip Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-          <div className="bg-[#024a2f] rounded-lg shadow-md overflow-hidden fade-in stagger-delay-3">
-            <div className="p-4 bg-black">
-              <h4 className="font-heading font-semibold text-lg text-[#8c6f25] text-center uppercase">Before & After: Boot Restoration</h4>
-            </div>
-            <div className="grid grid-cols-2">
-              <div className="relative">
-                <img 
-                  src={blImage} 
-                  alt="Boot before restoration" 
-                  className="w-full h-64 object-cover" 
-                />
-                <div className="absolute top-2 left-2 bg-[#8c6f25] text-white text-xs px-2 py-1 rounded">Before</div>
-              </div>
-              <div className="relative">
-                <img 
-                  src={brImage} 
-                  alt="Boot after restoration" 
-                  className="w-full h-64 object-cover" 
-                />
-                <div className="absolute top-2 right-2 bg-[#8c6f25] text-white text-xs px-2 py-1 rounded">After</div>
-              </div>
-            </div>
+          <div className="fade-in stagger-delay-3">
+            <h4 className="font-heading font-semibold text-lg text-[#8c6f25] text-center uppercase mb-4">Boot Restoration</h4>
+            <FlipCardStack
+              cardData={[
+                {
+                  frontTitle: "Before",
+                  frontSubtitle: "Click to see transformation",
+                  backTitle: "After",
+                  backSubtitle: "Restored to perfection",
+                  frontImage: blImage,
+                  backImage: brImage
+                }
+              ]}
+              autoFlip={true}
+              animationDelay={500}
+            />
           </div>
           
-          <div className="bg-[#024a2f] rounded-lg shadow-md overflow-hidden fade-in stagger-delay-4">
-            <div className="p-4 bg-black">
-              <h4 className="font-heading font-semibold text-lg text-[#8c6f25] text-center uppercase">Before & After: Sneaker Restore</h4>
-            </div>
-            <div className="grid grid-cols-2">
-              <div className="relative">
-                <img 
-                  src={srImage} 
-                  alt="Sneaker before restoration" 
-                  className="w-full h-64 object-cover" 
-                />
-                <div className="absolute top-2 left-2 bg-[#8c6f25] text-white text-xs px-2 py-1 rounded">Before</div>
-              </div>
-              <div className="relative">
-                <img 
-                  src={slImage} 
-                  alt="Sneaker after restoration" 
-                  className="w-full h-64 object-cover" 
-                />
-                <div className="absolute top-2 right-2 bg-[#8c6f25] text-white text-xs px-2 py-1 rounded">After</div>
-              </div>
-            </div>
+          <div className="fade-in stagger-delay-4">
+            <h4 className="font-heading font-semibold text-lg text-[#8c6f25] text-center uppercase mb-4">Sneaker Restoration</h4>
+            <FlipCardStack
+              cardData={[
+                {
+                  frontTitle: "Before",
+                  frontSubtitle: "Click to see transformation",
+                  backTitle: "After",
+                  backSubtitle: "Like new again",
+                  frontImage: srImage,
+                  backImage: slImage
+                }
+              ]}
+              autoFlip={true}
+              animationDelay={1500}
+            />
           </div>
         </div>
       </div>
