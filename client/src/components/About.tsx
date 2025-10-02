@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import useAnimationObserver from '@/hooks/useAnimationObserver';
 import storefrontMain from '@assets/storefront_1759411309106.jpg';
+import guaranteeImage from '@assets/quality_1759440138422.jpg';
 
 const About: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -69,9 +70,17 @@ const About: React.FC = () => {
             Our Promise to You
           </h3>
           
-          <p className="font-body text-white slide-from-left stagger-delay-8">
+          <p className="font-body text-white mb-8 slide-from-left stagger-delay-8">
             When you bring us your watch or jewelry, you're entrusting us with more than a piece — you're entrusting us with history, emotional value, and precision. We promise to treat it as such, to deliver transparent service, and to walk you through each step from diagnosis to return.
           </p>
+
+          <div className="flex justify-center slide-from-left stagger-delay-9">
+            <img 
+              src={guaranteeImage} 
+              alt="Guaranteed Quality" 
+              className="w-64 h-auto" 
+            />
+          </div>
         </div>
       </div>
     </section>
