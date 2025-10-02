@@ -81,9 +81,9 @@ const Prices: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Specialized Services */}
-          <div className="bg-gray-50 rounded-lg shadow-md p-6 scale-in stagger-delay-2">
-            <h3 className="font-heading font-semibold text-2xl text-[#013823] mb-6 flex items-center uppercase">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-[#013823]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="bg-[#022c1b] rounded-lg shadow-md p-6 scale-in stagger-delay-2">
+            <h3 className="font-heading font-semibold text-2xl text-[#8c6f25] mb-6 flex items-center uppercase">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-[#8c6f25]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
               Specialized Services
@@ -91,24 +91,24 @@ const Prices: React.FC = () => {
             
             <div className="space-y-4">
               <div className="flex justify-between items-center border-b border-gray-200 pb-3">
-                <span className="font-body">Watch Movement Service</span>
-                <span className="font-heading font-semibold text-black">$150 - $300</span>
+                <span className="font-body text-white">Watch Movement Service</span>
+                <span className="font-heading font-semibold text-[#8c6f25]">$150 - $300</span>
               </div>
               <div className="flex justify-between items-center border-b border-gray-200 pb-3">
-                <span className="font-body">Antique Restoration</span>
-                <span className="font-heading font-semibold text-black">$85 - $250</span>
+                <span className="font-body text-white">Antique Restoration</span>
+                <span className="font-heading font-semibold text-[#8c6f25]">$85 - $250</span>
               </div>
               <div className="flex justify-between items-center border-b border-gray-200 pb-3">
-                <span className="font-body">Custom Jewelry Design</span>
-                <span className="font-heading font-semibold text-black">Quote Required</span>
+                <span className="font-body text-white">Custom Jewelry Design</span>
+                <span className="font-heading font-semibold text-[#8c6f25]">Quote Required</span>
               </div>
               <div className="flex justify-between items-center border-b border-gray-200 pb-3">
-                <span className="font-body">Insurance Appraisals</span>
-                <span className="font-heading font-semibold text-black">$85 - $150</span>
+                <span className="font-body text-white">Insurance Appraisals</span>
+                <span className="font-heading font-semibold text-[#8c6f25]">$85 - $150</span>
               </div>
               <div className="flex justify-between items-center border-b border-gray-200 pb-3">
-                <span className="font-body">Emergency Rush Service</span>
-                <span className="font-heading font-semibold text-black">+50% Standard Rate</span>
+                <span className="font-body text-white">Emergency Rush Service</span>
+                <span className="font-heading font-semibold text-[#8c6f25]">+50% Standard Rate</span>
               </div>
             </div>
           </div>
