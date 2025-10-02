@@ -94,7 +94,7 @@ export default function FlipCardStack({
           className="flip-card-front"
           style={{ backgroundImage: `url(${currentCard.frontImage})` }}
         >
-          <div className="flip-card-content flip-card-text">
+          <div className="flip-card-content">
             <p className="flip-card-title">
               {currentCard.frontTitle}
             </p>
@@ -109,7 +109,7 @@ export default function FlipCardStack({
           className="flip-card-back"
           style={{ backgroundImage: `url(${currentCard.backImage})` }}
         >
-          <div className="flip-card-content flip-card-text">
+          <div className="flip-card-content">
             <p className="flip-card-title">
               {currentCard.backTitle}
             </p>
