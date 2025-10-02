@@ -142,10 +142,7 @@ const Prices: React.FC = () => {
         
         {/* Disclaimer */}
         <div className="mt-8 text-center">
-          <p className="font-body text-white text-lg mb-4">
-            If it's not listed here, don't worry. We handle all types of watch and jewelry repairs — just ask.
-          </p>
-          <p className="text-sm text-gray-400 italic">
+          <p className="text-sm text-gray-600 italic">
             We are not responsible for any items left for more than 30 days after completion of the work.
           </p>
         </div>
