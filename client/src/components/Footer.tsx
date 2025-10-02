@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="font-body text-sm text-gray-400 mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Brooklyn Timepiece & Jewelry Repair. All rights reserved.
+              &copy; {new Date().getFullYear()} Brooklyn Watch and Jewelry Repair. All rights reserved.
             </p>
             <div className="flex space-x-4">
               <a href="/privacy" className="font-body text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
