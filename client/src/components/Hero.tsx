@@ -38,6 +38,16 @@ const Hero: React.FC = () => {
       >
         <source src="/Shattered_Watch.mp4" type="video/mp4" />
       </video>
+      
+      {/* Green overlay to block bottom 20% of video */}
+      <div 
+        className="fixed left-0 w-full bg-[#013823]"
+        style={{
+          bottom: 0,
+          height: '20vh',
+          zIndex: 5
+        }}
+      ></div>
       <div className="container mx-auto px-4 relative z-10">
         {/* Headline right below navbar */}
         <div className="pt-6 max-w-4xl mx-auto text-center">
