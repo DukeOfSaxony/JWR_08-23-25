@@ -38,12 +38,16 @@ const Hero: React.FC = () => {
       >
         <source src="/Shattered_Watch.mp4" type="video/mp4" />
       </video>
-      <div className="container mx-auto px-4 mt-36 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-[#013823] mb-4 fade-in uppercase">
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Headline right below navbar */}
+        <div className="pt-6 max-w-4xl mx-auto text-center">
+          <h1 className="font-heading font-bold text-2xl md:text-2xl lg:text-3xl text-[#013823] fade-in uppercase">
             Brooklyn's Trusted Watch & Jewelry Repair — Crafting Timeless Precision
           </h1>
-          
+        </div>
+        
+        {/* Copy and buttons moved way down */}
+        <div className="max-w-4xl mx-auto text-center" style={{ marginTop: '100rem' }}>
           <p className="font-body text-lg md:text-xl text-[#013823] mb-8 mx-auto fade-in stagger-delay-1">
             For 8 years, we've restored cherished heirlooms and fine timepieces in Carroll Gardens and beyond. Get a free quote today — because your pieces deserve expert care.
           </p>
