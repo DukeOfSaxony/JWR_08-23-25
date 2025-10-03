@@ -1,36 +1,25 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef } from 'react';
 import useAnimationObserver from '@/hooks/useAnimationObserver';
 
 const Hero: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [scrollY, setScrollY] = useState(0);
   useAnimationObserver(sectionRef);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <section 
       id="hero" 
       ref={sectionRef}
-      className="pt-24 md:pt-32 pb-16 md:pb-24 min-h-screen flex items-center relative overflow-hidden"
+      className="relative w-full min-h-screen overflow-hidden"
+      style={{ marginTop: '96px' }}
     >
+      {/* Video background */}
       <video
         ref={videoRef}
         autoPlay
         muted
         playsInline
-        className="fixed left-0 w-full h-screen object-cover"
-        style={{
-          top: `${96 - scrollY * 0.5}px`
-        }}
+        className="absolute top-0 left-0 w-full h-full object-cover"
         onEnded={(e) => {
           const video = e.currentTarget;
           video.pause();
@@ -41,23 +30,24 @@ const Hero: React.FC = () => {
       
       {/* Green overlay to block bottom 20% of video */}
       <div 
-        className="fixed left-0 w-full bg-[#013823]"
+        className="absolute left-0 w-full bg-[#013823]"
         style={{
           bottom: 0,
-          height: '20vh',
+          height: '20%',
           zIndex: 5
         }}
       ></div>
-      <div className="container mx-auto px-4 relative z-10">
-        {/* Headline right below navbar */}
+      {/* Content container */}
+      <div className="container mx-auto px-4 relative z-10 h-full flex flex-col">
+        {/* Headline at top */}
         <div className="pt-6 max-w-4xl mx-auto text-center">
           <h1 className="font-heading font-bold text-2xl md:text-2xl lg:text-3xl text-[#013823] fade-in uppercase">
             Brooklyn's Trusted Watch & Jewelry Repair — Crafting Timeless Precision
           </h1>
         </div>
         
-        {/* Copy and buttons - positioned to show video */}
-        <div className="max-w-4xl mx-auto text-center mt-[70vh]">
+        {/* Copy and buttons - positioned lower to show video */}
+        <div className="max-w-4xl mx-auto text-center mt-auto pb-32">
           <p className="font-body text-lg md:text-xl text-[#013823] mb-8 mx-auto fade-in stagger-delay-1">
             For 8 years, we've restored cherished heirlooms and fine timepieces in Carroll Gardens and beyond. Get a free quote today — because your pieces deserve expert care.
           </p>
