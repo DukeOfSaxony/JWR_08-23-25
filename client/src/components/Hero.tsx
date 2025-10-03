@@ -23,10 +23,8 @@ const Hero: React.FC = () => {
           video.pause();
         }}
       >
-        <source src="/watch-repair-480p.mov" type="video/mp4" />
+        <source src="/Shattered_Watch.mp4" type="video/mp4" />
       </video>
-      
-      <div className="absolute top-0 left-0 w-full h-full bg-black/75"></div>
       <div className="container mx-auto px-4 mt-36 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4 fade-in uppercase">
