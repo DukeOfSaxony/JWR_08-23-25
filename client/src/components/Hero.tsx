@@ -46,8 +46,8 @@ const Hero: React.FC = () => {
           </h1>
         </div>
         
-        {/* Copy and buttons moved way down */}
-        <div className="max-w-4xl mx-auto text-center" style={{ marginTop: '100rem' }}>
+        {/* Copy and buttons - positioned to show video */}
+        <div className="max-w-4xl mx-auto text-center mt-[70vh]">
           <p className="font-body text-lg md:text-xl text-[#013823] mb-8 mx-auto fade-in stagger-delay-1">
             For 8 years, we've restored cherished heirlooms and fine timepieces in Carroll Gardens and beyond. Get a free quote today — because your pieces deserve expert care.
           </p>
