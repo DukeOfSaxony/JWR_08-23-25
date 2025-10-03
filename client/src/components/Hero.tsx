@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
         autoPlay
         muted
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="fixed top-24 md:top-32 left-0 w-full h-screen object-cover"
         onEnded={(e) => {
           const video = e.currentTarget;
           video.pause();
