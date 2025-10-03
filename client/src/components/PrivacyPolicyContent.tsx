@@ -20,7 +20,7 @@ const PrivacyPolicyContent: React.FC = () => {
 
         <div className="flex items-center justify-center mb-8">
           <div className="h-16">
-            <img src="/assets/logo.png" alt="Brooklyn Timepiece & Jewelry Repair" className="h-full object-contain" />
+            <img src="/logo.png" alt="Brooklyn Timepiece & Jewelry Repair" className="h-full object-contain" />
           </div>
         </div>
 

@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center mb-6">
               <div className="h-12">
-                <img src="/assets/logo.png" alt="Watch & Jewelry Repair" className="h-full object-contain" />
+                <img src="/logo.png" alt="Watch & Jewelry Repair" className="h-full object-contain" />
               </div>
             </div>
             <p className="font-body text-gray-300 mb-6">
