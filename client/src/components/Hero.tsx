@@ -1,10 +1,20 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import useAnimationObserver from '@/hooks/useAnimationObserver';
 
 const Hero: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [scrollY, setScrollY] = useState(0);
   useAnimationObserver(sectionRef);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <section 
@@ -17,7 +27,10 @@ const Hero: React.FC = () => {
         autoPlay
         muted
         playsInline
-        className="fixed top-24 md:top-32 left-0 w-full h-screen object-cover"
+        className="fixed left-0 w-full h-screen object-cover"
+        style={{
+          top: `${96 - scrollY * 0.5}px`
+        }}
         onEnded={(e) => {
           const video = e.currentTarget;
           video.pause();
@@ -27,11 +40,11 @@ const Hero: React.FC = () => {
       </video>
       <div className="container mx-auto px-4 mt-36 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4 fade-in uppercase">
+          <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-[#013823] mb-4 fade-in uppercase">
             Brooklyn's Trusted Watch & Jewelry Repair — Crafting Timeless Precision
           </h1>
           
-          <p className="font-body text-lg md:text-xl text-gray-200 mb-8 mx-auto fade-in stagger-delay-1">
+          <p className="font-body text-lg md:text-xl text-[#013823] mb-8 mx-auto fade-in stagger-delay-1">
             For 8 years, we've restored cherished heirlooms and fine timepieces in Carroll Gardens and beyond. Get a free quote today — because your pieces deserve expert care.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 fade-in stagger-delay-2 justify-center">
