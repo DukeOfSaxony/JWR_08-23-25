@@ -1,23 +1,33 @@
 import React, { useRef } from 'react';
 import useAnimationObserver from '@/hooks/useAnimationObserver';
-import hikingImage from '@assets/hiking.jpg';
 
 const Hero: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   useAnimationObserver(sectionRef);
 
   return (
     <section 
       id="hero" 
       ref={sectionRef}
-      className="pt-24 md:pt-32 pb-16 md:pb-24 bg-cover bg-center min-h-screen flex items-center" 
-      style={{
-        backgroundImage: `url(${hikingImage})`,
-        backgroundColor: 'rgba(0,0,0,0.75)',
-        backgroundBlendMode: 'overlay'
-      }}
+      className="pt-24 md:pt-32 pb-16 md:pb-24 min-h-screen flex items-center relative overflow-hidden"
     >
-      <div className="container mx-auto px-4 mt-36">
+      <video
+        ref={videoRef}
+        autoPlay
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        onEnded={(e) => {
+          const video = e.currentTarget;
+          video.pause();
+        }}
+      >
+        <source src="/watch-repair-480p.mov" type="video/mp4" />
+      </video>
+      
+      <div className="absolute top-0 left-0 w-full h-full bg-black/75"></div>
+      <div className="container mx-auto px-4 mt-36 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4 fade-in uppercase">
             Brooklyn's Trusted Watch & Jewelry Repair — Crafting Timeless Precision
