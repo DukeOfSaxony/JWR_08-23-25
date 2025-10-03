@@ -12,8 +12,8 @@ const Hero: React.FC = () => {
       ref={sectionRef}
       className="relative w-full overflow-hidden"
       style={{ 
-        marginTop: '96px',
-        height: 'calc(100vh - 96px)'
+        paddingTop: '96px',
+        height: '100vh'
       }}
     >
       {/* Video background */}
@@ -22,7 +22,11 @@ const Hero: React.FC = () => {
         autoPlay
         muted
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute left-0 w-full object-cover"
+        style={{
+          top: '96px',
+          height: 'calc(100vh - 96px)'
+        }}
         onEnded={(e) => {
           const video = e.currentTarget;
           video.pause();
@@ -36,12 +40,12 @@ const Hero: React.FC = () => {
         className="absolute left-0 w-full bg-[#013823]"
         style={{
           bottom: 0,
-          height: '20%',
+          height: 'calc((100vh - 96px) * 0.2)',
           zIndex: 5
         }}
       ></div>
       {/* Content container - positioned in lower quarter */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 px-6 pb-8 sm:pb-12" style={{ height: '25%', display: 'flex', alignItems: 'center' }}>
+      <div className="absolute left-0 right-0 z-10 px-6 pb-8 sm:pb-12" style={{ bottom: 0, height: 'calc((100vh - 96px) * 0.25)', display: 'flex', alignItems: 'center' }}>
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             {/* Headline, copy and buttons all in lower quarter */}
