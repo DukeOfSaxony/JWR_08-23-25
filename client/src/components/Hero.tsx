@@ -10,7 +10,11 @@ const Hero: React.FC = () => {
     <section 
       id="hero" 
       ref={sectionRef}
-      className="relative w-full min-h-screen overflow-hidden"
+      className="relative w-full overflow-hidden"
+      style={{ 
+        marginTop: '96px',
+        height: 'calc(100vh - 96px)'
+      }}
     >
       {/* Video background */}
       <video
