@@ -9,23 +9,27 @@
     <title>Michael's Shoe Repair | Carroll Gardens, Brooklyn</title>
   </head>
   <body>
-    <!-- A hidden form for Netlify to detect during build time -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <!-- Hidden detection form for Netlify (ensures form is discovered at build time) -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" encType="multipart/form-data" hidden>
       <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden">
+        <label>Don't fill this out: <input name="bot-field" /></label>
+      </p>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="tel" name="phone" />
       <select name="service">
-        <option value="shoe-repair">Shoe Repair</option>
+        <option value="">Select a Service</option>
         <option value="watch-repair">Watch Repair</option>
         <option value="jewelry-repair">Jewelry Repair</option>
-        <option value="sole-replacement">Sole Replacement</option>
-        <option value="heel-repair">Heel Repair</option>
-        <option value="leather-restoration">Leather Restoration</option>
-        <option value="stretching">Shoe Stretching</option>
-        <option value="orthopedic">Orthopedic Modifications</option>
-        <option value="sneaker-cleaning">Sneaker Cleaning</option>
-        <option value="other">Other</option>
+        <option value="watch-service">Watch Service & Maintenance</option>
+        <option value="ring-sizing">Ring Sizing</option>
+        <option value="chain-repair">Chain Repair</option>
+        <option value="battery-replacement">Watch Battery</option>
+        <option value="band-replacement">Watch Band Replacement</option>
+        <option value="appraisal">Jewelry Appraisal</option>
+        <option value="restoration">Antique Restoration</option>
+        <option value="other">Other (Please Specify)</option>
       </select>
       <textarea name="message"></textarea>
       <input type="file" name="image" />
