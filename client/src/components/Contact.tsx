@@ -30,10 +30,11 @@ const Contact: React.FC = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
     // Basic form validation
     if (!formData.name || !formData.email || !formData.message) {
-      e.preventDefault();
       toast({
         title: "Error",
         description: "Please fill out all required fields.",
@@ -42,47 +43,22 @@ const Contact: React.FC = () => {
       return;
     }
     
-    // Check if running on Netlify (in production)
-    const isNetlify = window.location.hostname.includes('netlify.app') || 
-                     !window.location.hostname.includes('localhost');
-    
-    if (isNetlify) {
-      // For Netlify forms, just let the normal form submission happen
-      // The action="/success.html" in the form tag will handle redirection
-      setIsSubmitting(true);
-      return; // Continue with normal form submission
-    }
-    
-    // Only for local development - prevent default and handle manually
-    e.preventDefault();
     setIsSubmitting(true);
     
-    // Local API call code
-    fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        service: formData.service,
-        message: formData.message
-      })
-    })
-    .then(response => {
-      if (!response.ok) {
-        return response.json().then(data => {
-          throw new Error(data.message || 'Something went wrong');
-        });
-      }
+    const formEl = e.currentTarget as HTMLFormElement;
+    const fd = new FormData(formEl);
+    fd.set("form-name", "contact");
+    
+    try {
+      const res = await fetch("/", { method: "POST", body: fd });
+      if (!res.ok) throw new Error(String(res.status));
       
-      // Show success message
-      toast({
-        title: "Message Sent",
-        description: `Thank you, ${formData.name}! Your message has been sent successfully.`,
+      toast({ 
+        title: "Message Sent", 
+        description: `Thank you, ${formData.name}! Your message has been sent successfully.` 
       });
-        
-      // Reset the form
+      
+      formEl.reset();
       setFormData({
         name: '',
         email: '',
@@ -91,20 +67,16 @@ const Contact: React.FC = () => {
         message: '',
         image: null
       });
-      
       setFormSubmitted(true);
-    })
-    .catch(error => {
-      console.error('Error during form submission:', error);
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive",
+    } catch (err) {
+      toast({ 
+        title: "Error", 
+        description: "Failed to send message. Please try again.", 
+        variant: "destructive" 
       });
-    })
-    .finally(() => {
+    } finally {
       setIsSubmitting(false);
-    });
+    }
   };
 
   return (
@@ -131,11 +103,14 @@ const Contact: React.FC = () => {
               name="contact" 
               method="POST" 
               data-netlify="true" 
-              action="/success.html"
+              netlify-honeypot="bot-field"
+              action="/"
               encType="multipart/form-data"
             >
-              {/* Required Netlify hidden field */}
               <input type="hidden" name="form-name" value="contact" />
+              <p hidden>
+                <label>Don't fill this out: <input name="bot-field" onChange={handleChange} /></label>
+              </p>
               
               <div className="form-input">
                 <label htmlFor="name" className="block font-body text-white mb-2">Your Name</label>

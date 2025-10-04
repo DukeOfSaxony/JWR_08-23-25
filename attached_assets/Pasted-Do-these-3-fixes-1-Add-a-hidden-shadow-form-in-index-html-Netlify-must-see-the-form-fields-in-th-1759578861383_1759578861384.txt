@@ -1,0 +1,87 @@
+Do these 3 fixes:
+
+1) Add a hidden shadow form in index.html
+
+Netlify must see the form fields in the built HTML. Add this anywhere inside <body>:
+
+<!-- Shadow form so Netlify detects it at build-time -->
+<form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden enctype="multipart/form-data">
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <input type="tel" name="phone" />
+  <input type="text" name="service" />
+  <textarea name="message"></textarea>
+  <input type="file" name="image" />
+</form>
+
+2) Tweak your React form
+
+Post to / (let Netlify handle it), not /success.html.
+
+Keep the hidden form-name.
+
+Add a honeypot field (prevents bot spam).
+
+<form
+  id="contact-form"
+  className="space-y-6"
+  onSubmit={handleSubmit}
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  action="/"                    // <— change this
+  encType="multipart/form-data"
+>
+  <input type="hidden" name="form-name" value="contact" />
+  <p hidden>
+    <label>Don’t fill this out: <input name="bot-field" onChange={handleChange} /></label>
+  </p>
+  ...
+</form>
+
+
+If you really want a thank-you page, create a real static file at public/success.html (so it exists in the publish dir), then either set action="/success.html" and remove the SPA catch-all for POSTs, or keep action="/" and do window.location.href = "/success.html" after a successful submit.
+
+3) Submission handler
+
+Right now, in production you “let it submit” (good), but because of the /success.html target + SPA redirect it 400s. After changing action="/", you can keep your current handler, or switch to a FormData fetch that also supports the file upload:
+
+async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  // client-side validation
+  if (!formData.name || !formData.email || !formData.message) {
+    e.preventDefault();
+    toast({ title: "Error", description: "Please fill out all required fields.", variant: "destructive" });
+    return;
+  }
+
+  // Let Netlify handle the standard POST (keeps file uploads working)
+  // No preventDefault here:
+  setIsSubmitting(true);
+}
+
+
+OR use fetch with FormData (also works with files):
+
+async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  const formEl = e.currentTarget as HTMLFormElement;
+  const fd = new FormData(formEl);        // includes the file
+  fd.set("form-name", "contact");         // ensure present
+
+  try {
+    const res = await fetch("/", { method: "POST", body: fd });
+    if (!res.ok) throw new Error(String(res.status));
+    toast({ title: "Message Sent", description: `Thank you, ${formData.name}!` });
+    formEl.reset();
+    setFormSubmitted(true);
+    // optional redirect:
+    // window.location.href = "/success.html";
+  } catch (err) {
+    toast({ title: "Error", description: "Failed to send message. Please try again.", variant: "destructive" });
+  } finally {
+    setIsSubmitting(false);
+  }
+}
