@@ -24,7 +24,7 @@ const Gallery: React.FC = () => {
         
         {/* Before & After Flip Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="fade-in stagger-delay-1">
+          <div className="fade-in stagger-delay-1 w-[70%] md:w-full mx-auto">
             <FlipCardStack
               cardData={[
                 {
@@ -41,7 +41,7 @@ const Gallery: React.FC = () => {
             />
           </div>
           
-          <div className="fade-in stagger-delay-2">
+          <div className="fade-in stagger-delay-2 w-[70%] md:w-full mx-auto">
             <FlipCardStack
               cardData={[
                 {
@@ -58,7 +58,7 @@ const Gallery: React.FC = () => {
             />
           </div>
 
-          <div className="fade-in stagger-delay-3">
+          <div className="fade-in stagger-delay-3 w-[70%] md:w-full mx-auto">
             <FlipCardStack
               cardData={[
                 {
